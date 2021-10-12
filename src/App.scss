@@ -1,0 +1,36 @@
+.headless-table {
+  width: 800px;
+  table {
+    border-collapse: collapse;
+    border: 1px solid #333;
+    width: 100%;
+    th,td {
+      padding: 10px;
+      border: 1px solid #333;
+    }
+  }
+  .search-area {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: right;
+    padding: 5px;
+    input {
+      margin-right: 5px;
+    }
+  }
+  .pagination-area {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    .pagination {
+      margin-right: 5px;
+      span, button {
+        padding: 5px;
+      }
+    }
+    .quick-jump {
+      padding: 5px;
+    }
+  }
+
+}
