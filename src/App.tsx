@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { genTestData } from './useTestTable/genTestData';
+import Example from './Example';
 
 function App() {
   const [testData] = useState(genTestData({
@@ -14,9 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      {testData.dataSource.map((item) => (
-        <div key={item.id}>{item.userName}/{item.age}/{item.place}/{item.date}</div>
-      ))}
+      <Example />
     </div>
   );
 }
